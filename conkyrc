@@ -29,7 +29,7 @@ override_utf8_locale no
 use_spacer right
 
 TEXT
-${font Arial:size=20}${color Tan1}RPI${color Ivory}LINUX
+${font Arial:size=20}${color Tan1}RPI${color Ivory}KALI-LINUX
 
 ${voffset -90}
 ${color DimGray}
@@ -65,10 +65,32 @@ $font${top_mem name 4}${alignr}${top mem 4} %
 $font${top_mem name 5}${alignr}${top mem 5} %
 
 ${font Arial:bold:size=10}${color Tan2}NETWORK ${color DarkSlateGray}${hr 2}
+$font${color DimGray}IP on eth0 $alignr ${addr eth0}
+Down $alignr ${downspeed eth0} kb/s
+Up $alignr ${upspeed eth0} kb/s
+Downloaded: $alignr  ${totaldown eth0}
+Uploaded: $alignr  ${totalup eth0}
+
 $font${color DimGray}IP on wlan0 $alignr ${addr wlan0}
+Down $alignr ${downspeed wlan0} kb/s 
+Up $alignr ${upspeed wlan0} kb/s 
+Downloaded: $alignr ${totaldown wlan0} 
+Uploaded: $alignr ${totalup wlan0} 
 
-Down $alignr ${downspeed wlan0} kb/s
-Up $alignr ${upspeed wlan0} kb/s
+$font${color DimGray}IP on wlan1 $alignr ${addr wlan1} 
+Down $alignr ${downspeed wlan1} kb/s 
+Up $alignr ${upspeed wlan1} kb/s 
+Downloaded: $alignr ${totaldown wlan1} 
+Uploaded: $alignr ${totalup wlan1} 
 
-Downloaded: $alignr  ${totaldown wlan0}
-Uploaded: $alignr  ${totalup wlan0}
+$font${color DimGray}IP on wlan4 $alignr ${addr wlan4} 
+Down $alignr ${downspeed wlan4} kb/s 
+Up $alignr ${upspeed wlan4} kb/s 
+Downloaded: $alignr ${totaldown wlan4} 
+Uploaded: $alignr ${totalup wlan4} 
+
+$font${color DimGray}IP on wlan5 $alignr ${addr wlan4} 
+Down $alignr ${downspeed wlan5} kb/s 
+Up $alignr ${upspeed wlan5} kb/s 
+Downloaded: $alignr ${totaldown wlan5} 
+Uploaded: $alignr ${totalup wlan5} 
